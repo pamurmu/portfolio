@@ -105,53 +105,6 @@ document.querySelectorAll('.skill-card, .timeline-item, .education-card, .contac
 // You can add form handling here when you add a contact form
 
 // ===========================
-// TYPING ANIMATION FOR HERO
-// ===========================
-
-const typeWriter = () => {
-    const title = document.querySelector('.hero-title');
-    const subtitle = document.querySelector('.hero-subtitle');
-
-    if (title && subtitle) {
-        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            return;
-        }
-
-        const titleText = title.textContent;
-        const subtitleText = subtitle.textContent;
-
-        title.textContent = '';
-        subtitle.textContent = '';
-
-        let titleIndex = 0;
-        let subtitleIndex = 0;
-
-        const typeSubtitle = () => {
-            if (subtitleIndex < subtitleText.length) {
-                subtitle.textContent += subtitleText.charAt(subtitleIndex);
-                subtitleIndex += 1;
-                setTimeout(typeSubtitle, 18);
-            }
-        };
-
-        const typeTitle = () => {
-            if (titleIndex < titleText.length) {
-                title.textContent += titleText.charAt(titleIndex);
-                titleIndex += 1;
-                setTimeout(typeTitle, 35);
-            } else {
-                typeSubtitle();
-            }
-        };
-
-        typeTitle();
-    }
-};
-
-// Run typing animation when page loads
-window.addEventListener('load', typeWriter);
-
-// ===========================
 // SCROLL TO TOP BUTTON
 // ===========================
 
