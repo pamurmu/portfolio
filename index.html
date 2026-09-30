@@ -17,7 +17,7 @@
             <a href="#hero" class="logo" aria-label="Go to homepage section">
                 <i class="fas fa-code"></i> Pritesh Murmu
             </a>
-            <ul class="nav-menu">
+            <ul class="nav-menu" id="primary-navigation">
                 <li><a href="#hero" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">Profile</a></li>
                 <li><a href="#highlights" class="nav-link">Highlights</a></li>
@@ -27,16 +27,16 @@
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <!-- <a href="#contact" class="nav-cta">Let’s Talk</a> -->
-            <div class="hamburger">
+            <button class="hamburger" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="primary-navigation">
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>
+            </button>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
     <section id="hero" class="hero">
         <div class="hero-content">
             <div class="hero-text">

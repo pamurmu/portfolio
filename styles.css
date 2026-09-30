@@ -29,6 +29,11 @@ html {
     scroll-behavior: smooth;
 }
 
+main[id],
+section[id] {
+    scroll-margin-top: 120px;
+}
+
 body {
     font-family: 'Manrope', sans-serif;
     color: var(--text-color);
@@ -223,6 +228,9 @@ body {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    border: 0;
+    background: transparent;
+    padding: 0;
 }
 
 .hamburger span {
